@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Allows the website to scale correctly on different devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tech Cycle — E-Waste & Sustainability</title>
+
+  <!-- Imported fonts to create a cleaner visual style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Connects HTML to the external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+
+<!-- Main header area with title and navigation -->
+<header class="site-header">
+
+  <h1>Tech Cycle: E-Waste & Sustainability</h1>
+  <p class="subtitle">a student guide to understanding e-waste &amp; sustainable tech</p>
+  <p class="subtitle">
+This page demonstrates responsive web design through CSS Grid, Flexbox,
+media queries, and fluid images. Resize the browser window to see the layouts adapt.
+</p>
+
+
+  <!-- Navigation links make it easier to move between sections -->
+  <nav class="page-nav">
+
+    <a href="#stats">1. Stats Grid</a>
+    <a href="#repair">2. Right to Repair</a>
+    <a href="#action">3. Action Steps</a>
+    <a href="#sources">Works Cited</a>
+
+  </nav>
+
+</header>
+
+
+
+<main class="main-container">
+
+
+<!-- First example showing CSS Grid responsiveness -->
+<section id="stats" class="demo-section">
+
+  <div class="section-header">
+
+    <h2>1. The E-Waste Issue by the Numbers</h2>
+
+    <!-- Shows the main responsive technique used in this section -->
+    <span class="demo-badge">CSS Grid Layout</span>
+
+  </div>
+
+
+  <!-- Explains the responsive feature so the viewer understands the example -->
+  <div class="rubric-explanation">
+
+    <strong>What you are seeing:</strong> I built this gallery using <code>CSS Grid</code> with <code>repeat(auto-fit, minmax(250px, 1fr))</code>. On desktop screens, these cards line up neatly side-by-side. As you resize your browser window, the grid automatically shifts the cards into fewer rows so nothing gets squished.
+
+  </div>
+
+
+  <!-- Grid cards automatically rearrange based on screen size -->
+  <div class="grid-gallery">
+
+
+    <article class="stat-card">
+
+      <div class="stat-number">62M</div>
+      <h3>Tons of E-Waste</h3>
+
+      <p>Every year, humans toss out over 60 million metric tons of tech. It’s growing way faster than our actual recycling efforts can keep up with.</p>
+
+    </article>
+
+
+    <article class="stat-card">
+
+      <div class="stat-number">&lt; 23%</div>
+      <h3>Actually Recycled</h3>
+
+      <p>Fewer than a quarter of old phones, laptops, and gadgets get safely recycled. The rest ends up sitting in landfills.</p>
+
+    </article>
+
+
+    <article class="stat-card">
+
+      <div class="stat-number">$62B</div>
+      <h3>Valuable Metals</h3>
+
+      <p>There's over $60 billion worth of copper, gold, and rare metals trapped inside thrown-away electronics each year.</p>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+
+<hr class="section-divider">
+
+
+
+<!-- Second example showing Flexbox and mobile layout changes -->
+<section id="repair" class="demo-section">
+
+
+<div class="section-header">
+
+<h2>2. Why the "Right to Repair" Matters</h2>
+
+<span class="demo-badge">Flexbox + Media Query</span>
+
+</div>
+
+
+<div class="rubric-explanation">
+
+<strong>What you are seeing:</strong> This section uses <code>Flexbox</code> combined with a <code>@media (max-width: 768px)</code> query. On wide screens, the motherboard image and text sit side-by-side. Once the viewport screen gets smaller than 768px, the media query changes the flex direction to stack them vertically for mobile devices.
+
+</div>
+
+
+
+<div class="flex-feature">
+
+
+<div class="flex-image-container">
+
+
+<!-- Image also uses responsive sizing from CSS -->
+<img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=800&q=80"
+alt="Close up of circuit board"
+class="responsive-img">
+
+
+<!-- Gives credit to the original photographer -->
+<p class="image-credit">
+Photo by Alexandre Debiève on Unsplash
+</p>
+
+
+</div>
+
+
+
+<div class="flex-text-container">
+
+<h3>Making Gadgets Last Longer</h3>
+
+<p>A lot of tech companies design products that are super hard to fix yourself, forcing us to buy new models every couple of years. The Right to Repair movement is pushing for companies to sell spare parts and share repair manuals with ordinary people.</p>
+
+<p>If we can fix our own hardware or upgrade individual parts, we keep toxic materials out of the dirt and save money at the same time.</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<hr class="section-divider">
+
+
+
+<!-- Third example demonstrating fluid images and responsive cards -->
+<section id="action" class="demo-section">
+
+
+<div class="section-header">
+
+<h2>3. Small Things We Can Do</h2>
+
+<span class="demo-badge">Fluid Media</span>
+
+</div>
+
+
+
+<div class="rubric-explanation">
+
+<strong>What you are seeing:</strong> This layout demonstrates <strong>Fluid Media</strong>. Both photos use <code>max-width: 100%</code> and <code>height: auto</code> so they shrink down smoothly on smaller phone screens without overflowing past the screen edges.
+
+</div>
+
+
+
+<div class="grid-gallery">
+
+
+
+<article class="action-card">
+
+
+<img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=600&q=80"
+alt="Recycling container"
+class="responsive-img">
+
+
+<p class="image-credit">
+Photo by Alfonso Navarro on Unsplash
+</p>
+
+
+<h3>Drop Off Old Tech Safely</h3>
+
+<p>Don't toss dead batteries or old phones in standard trash cans. Check for local e-waste recycling bins at city centers or tech stores.</p>
+
+
+</article>
+
+
+
+<article class="action-card">
+
+
+<img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80"
+alt="Clean laptop setup"
+class="responsive-img">
+
+
+<p class="image-credit">
+Photo by Kari Shea on Unsplash
+</p>
+
+
+<h3>Pass It Along</h3>
+
+<p>If you have an old laptop or tablet that still turns on, consider wiping the hard drive and donating it to a local school or student group.</p>
+
+
+</article>
+
+
+</div>
+
+
+</section>
+
+
+
+<hr class="section-divider">
+
+
+
+<!-- References used for research and image/content information -->
+<section id="sources" class="demo-section">
+
+
+<div class="section-header">
+
+<h2>Works Cited &amp; References</h2>
+
+</div>
+
+
+<ul class="works-cited-list">
+
+
+<li>
+Casabona, Joe. <em>HTML and CSS: Visual QuickStart Guide</em>. 9th ed., Peachpit Press, 2021.
+</li>
+
+
+<li>
+United Nations Institute for Training and Research (UNITAR). <em>The Global E-waste Monitor 2024</em>. UN Geneva, 2024.
+</li>
+
+
+<li>
+The Repair Association. "Stand Up for Your Right to Repair." <em>Repair.org</em>, 2025.
+</li>
+
+
+</ul>
+
+
+</section>
+
+
+
+<!-- Button that allows users to quickly return to the top -->
+<div class="back-to-top-wrapper">
+
+<a href="#top" class="back-to-top">&uparrow; Back to Top</a>
+
+</div>
+
+
+
+</main>
+
+
+</body>
+</html>

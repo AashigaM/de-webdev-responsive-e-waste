@@ -1,0 +1,292 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  line-height: 1.7;
+  color: #38433b;
+  background-color: #f4f6f2; /* Main page background color */
+  padding: 40px 15px;
+}
+
+/* Keeps the content centered and readable */
+.main-container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(56, 67, 59, 0.04);
+}
+
+
+/* Header and text styling */
+
+.site-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px 10px;
+}
+
+.site-header h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #2c3a2e; /* Dark green to match the theme */
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: #6b7c6d;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+
+/* Navigation bar */
+
+.page-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.page-nav a {
+  text-decoration: none;
+  color: #4a5d4e;
+  background-color: #e8ede5;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+/* Adds a small hover effect */
+.page-nav a:hover {
+  background-color: #8da38f;
+  color: #ffffff;
+}
+
+
+/* Section headings */
+
+h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.7rem;
+  color: #2c3a2e;
+}
+
+.section-header {
+  margin-bottom: 15px;
+}
+
+
+/* Labels showing the responsive technique used */
+.demo-badge {
+  display: inline-block;
+  background-color: #e2ebd8;
+  color: #3b523e;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 10px;
+  margin-top: 6px;
+}
+
+
+/* Explanation box for each example */
+.rubric-explanation {
+  background-color: #f1f5ee;
+  border-left: 3px solid #8da38f;
+  padding: 16px 20px;
+  margin-bottom: 25px;
+  border-radius: 0 10px 10px 0;
+  font-size: 0.92rem;
+  color: #435245;
+}
+
+.section-divider {
+  border: 0;
+  height: 1px;
+  background-color: #e6ebe3;
+  margin: 45px 0;
+}
+
+
+/* Grid layout for responsive cards */
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Shared styling for the cards */
+.stat-card, .action-card {
+  background-color: #fafcf9;
+  border: 1px solid #e6ebe3;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.stat-number {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #58735a;
+  margin-bottom: 5px;
+}
+
+.stat-card h3, .action-card h3 {
+  font-size: 1.1rem;
+  color: #2c3a2e;
+  margin-bottom: 8px;
+}
+
+.stat-card p, .action-card p {
+  font-size: 0.92rem;
+  color: #59695b;
+}
+
+
+/* Flexbox layout for image and text */
+
+.flex-feature {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  background-color: #fafcf9;
+  border: 1px solid #e6ebe3;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.flex-image-container {
+  flex: 1;
+}
+
+.flex-text-container {
+  flex: 1.2;
+}
+
+/* Gives the text section slightly more space */
+.flex-text-container h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.4rem;
+  color: #2c3a2e;
+  margin-bottom: 12px;
+}
+
+.flex-text-container p {
+  font-size: 0.95rem;
+  color: #59695b;
+  margin-bottom: 12px;
+}
+/* Makes images responsive */
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.action-card img {
+  margin-bottom: 15px;
+}
+
+
+/* References and navigation styling */
+
+.works-cited-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.works-cited-list li {
+  font-size: 0.92rem;
+  color: #59695b;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  text-indent: -20px; /* Creates a hanging indent */
+}
+
+
+/* Back to top button */
+
+.back-to-top-wrapper {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.back-to-top {
+  display: inline-block;
+  text-decoration: none;
+  color: #58735a;
+  background-color: #e8ede5;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+/* Changes button color when hovered */
+.back-to-top:hover {
+  background-color: #8da38f;
+  color: #ffffff;
+}
+
+
+/* Adjust layout for smaller screens */
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 15px 8px;
+  }
+
+  .main-container {
+    padding: 20px;
+  }
+
+  /* Makes the title fit better on mobile */
+  .site-header h1 {
+    font-size: 2.2rem;
+  }
+
+  /* Stacks image and text vertically on smaller devices */
+  .flex-feature {
+    flex-direction: column;
+    padding: 18px;
+  }
+
+  .page-nav {
+    gap: 8px;
+  }
+
+  /* Makes navigation buttons smaller for mobile screens */
+  .page-nav a {
+    font-size: 0.82rem;
+    padding: 6px 12px;
+  }
+  /* Small credits below images */
+.image-credit {
+  font-size: 0.75rem;
+  color: #7a877b;
+  margin-top: 6px;
+  font-style: italic;
+}
+}

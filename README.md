@@ -2,8 +2,7 @@
 
 **Dual Enrollment: Responsive Web Design — Tech Cycle: E-Waste & Sustainability**
 
-**Live Demo:** https://codecraftworks.dev/web/8puMJ5ttkvllVXGXqXTy/?v=6315#sources
-
+**Live Demo:** https://aashigam.github.io/de-webdev-responsive-e-waste/
 ---
 
 ## Project Overview
